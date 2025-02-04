@@ -6,8 +6,8 @@ An implementation of Paillier Encryption.
 
 # Licensing
 
-* [GPL 3.0](https://spdx.org/licenses/GPL-3.0-only.html) or [GPL 3.0](./LICENSE-GPL-3.0.md)
-* [Commercial](./LICENSE-COMMERCIAL.md)
+* [BSL 1.1](./LICENSE.md)
+* Commercial licensing is available
 
 # Copyright
 

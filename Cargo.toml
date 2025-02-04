@@ -6,7 +6,7 @@ authors = ["Jeff Hohenstein <jeffrey.hohenstein@gmail.com>"]
 description = "Paillier Cryptosystem"
 repository = "https://github.com/saltatory/paillier"
 homepage = "https://github.com/saltatory/paillier"
-license = "GPL-3.0-only"
+license = "BUSL-1.1"
 
 [dependencies]
 bigint = "4.4.3"
