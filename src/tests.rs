@@ -1,3 +1,7 @@
+// Copyright (c) Jeffrey Hohenstein <jeffrey.hohenstein@gmail.com>
+//
+// All rights reserved.
+
 use crypto_bigint::{rand_core::OsRng, Int, Random, RandomMod, Uint};
 
 use crate::Paillier;

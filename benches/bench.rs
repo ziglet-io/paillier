@@ -1,3 +1,7 @@
+// Copyright (c) Jeffrey Hohenstein <jeffrey.hohenstein@gmail.com>
+//
+// All rights reserved.
+
 use criterion::{criterion_group, criterion_main, Criterion};
 use crypto_bigint::{rand_core::OsRng, RandomMod, Uint};
 use paillier::Paillier;
