@@ -1,16 +1,23 @@
 [package]
-name = "crypto-paillier"
+name = "ziglet-paillier"
 description = "Paillier Cryptosystem"
-repository = "https://github.com/saltatory/paillier"
-homepage = "https://github.com/saltatory/paillier"
-version = "0.1.0"
-edition = "2021"
-authors = ["Jeffrey Hohenstein <jeffrey.hohenstein@gmail.com>"]
-license = "BUSL-1.1"
+repository = "https://github.com/ziglet-io/paillier"
+homepage = "https://github.com/ziglet-io/paillier"
+readme = "README.md"
+
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license-file.workspace = true
 
 [dependencies]
+<<<<<<< HEAD
 crypto-bigint = {workspace = true}
 crypto-primality = { version = "0.1.0"}
+=======
+crypto-bigint.workspace = true
+ziglet-primality= {path = "../primality"}
+>>>>>>> master
 
 # Add rendering of LaTeX math symbols in documentation
 #
