@@ -10,7 +10,7 @@ license = "BUSL-1.1"
 
 [dependencies]
 crypto-bigint = {workspace = true}
-crypto-primality = { path = "../primality" }
+crypto-primality = { path = "../primality", version = "0.1.0"}
 
 # Add rendering of LaTeX math symbols in documentation
 #
