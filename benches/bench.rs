@@ -4,7 +4,7 @@
 
 use criterion::{criterion_group, criterion_main, Criterion};
 use crypto_bigint::{rand_core::OsRng, RandomMod, Uint};
-use paillier::Paillier;
+use ziglet_paillier::Paillier;
 
 fn bench(criterion: &mut Criterion) {
     let mut group = criterion.benchmark_group("paillier");

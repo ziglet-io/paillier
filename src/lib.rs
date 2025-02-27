@@ -7,7 +7,7 @@ use crypto_bigint::{
     rand_core::RngCore,
     Concat, Int, InvMod, NonZero, RandomMod, Split, Uint, Zero,
 };
-use crypto_primality::miller_rabin;
+use ziglet_primality::miller_rabin;
 
 /// Secret Key ($p$,$q$) where $p,q \in \mathbb{Z}_n$ are primes
 ///
@@ -51,7 +51,7 @@ pub struct KeyPair<const LIMBS_SINGLE: usize, const LIMBS_DOUBLE: usize, const L
 ///
 /// ```rust
 /// use crypto_bigint::{rand_core::OsRng, Int, Random, RandomMod, Uint};
-/// use paillier::Paillier;
+/// use crypto_paillier::Paillier;
 ///
 /// const T: u32 = 10;
 /// const SINGLE: usize = 16;
