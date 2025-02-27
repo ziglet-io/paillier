@@ -9,8 +9,8 @@ authors = ["Jeffrey Hohenstein <jeffrey.hohenstein@gmail.com>"]
 license = "BUSL-1.1"
 
 [dependencies]
-crypto-bigint = {workspace = true}
-crypto-primality = { path = "../primality" }
+crypto-bigint = {version = "0.6.0"}
+crypto-primality = { version = "0.1.1" }
 
 # Add rendering of LaTeX math symbols in documentation
 #
