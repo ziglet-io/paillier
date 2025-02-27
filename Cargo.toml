@@ -1,17 +1,16 @@
 [package]
 name = "crypto-paillier"
-version = "0.1.0"
-edition = "2021"
-authors = ["Jeff Hohenstein <jeffrey.hohenstein@gmail.com>"]
 description = "Paillier Cryptosystem"
 repository = "https://github.com/saltatory/paillier"
 homepage = "https://github.com/saltatory/paillier"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jeffrey Hohenstein <jeffrey.hohenstein@gmail.com>"]
 license = "BUSL-1.1"
 
 [dependencies]
-bigint = "4.4.3"
-crypto-bigint = "0.6.0"
-crypto-primality = { version = "0.1.0", path = "../primality" }
+crypto-bigint = {workspace = true}
+crypto-primality = { path = "../primality" }
 
 # Add rendering of LaTeX math symbols in documentation
 #
@@ -25,8 +24,5 @@ rustdoc-args = ["--html-in-header", "katex-header.html"]
 name = "bench"
 harness = false
 
-[profile.bench]
-debug = true
-
 [dev-dependencies]
-criterion = "0.5.1"
+criterion = {workspace = true}
