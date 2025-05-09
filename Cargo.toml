@@ -5,14 +5,14 @@ repository = "https://github.com/ziglet-io/paillier"
 homepage = "https://github.com/ziglet-io/paillier"
 readme = "README.md"
 
-version.workspace = true
-edition.workspace = true
-authors.workspace = true
-license-file.workspace = true
+version = "0.1.0"
+edition = "2021"
+authors = ["Jeffrey Hohenstein <jeffrey.hohenstein@gmail.com>"]
+license = "MIT"
 
 [dependencies]
-crypto-bigint.workspace = true
-ziglet-primality= {path = "../primality"}
+crypto-bigint = {version = "0.6.0" }
+ziglet-primality= {version = "0.1.0", path = "../primality"}
 
 # Add rendering of LaTeX math symbols in documentation
 #
@@ -27,4 +27,4 @@ name = "bench"
 harness = false
 
 [dev-dependencies]
-criterion = {workspace = true}
+criterion = {version = "0.5.1", features = ["async_tokio", "async"]}
